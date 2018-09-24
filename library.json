@@ -7,7 +7,7 @@
   "author": "Joubel",
   "majorVersion": 1,
   "minorVersion": 5,
-  "patchVersion": 1,
+  "patchVersion": 2,
   "runnable": 0,
   "coreApi": {
     "majorVersion": 1,
@@ -15,19 +15,41 @@
   },
   "preloadedJs": [
     {
+      "_comment": "VideoJS",
+      "path": "scripts/videojs-5.19.js"
+    },
+    {
+      "_comment": "MPEG-DASH",
+      "path": "scripts/dash.all.min.js"
+    },
+    {
+      "_comment": "VideoJS + MPEG-DASH subplugin",
+      "path": "scripts/videojs-dash.min.js"
+    },
+    {
+      "_comment": "H5P VideoJS player wrapper",
+      "path": "scripts/videojs.js"
+    },
+    {
+      "_comment": "H5P Youtube player wrapper",
       "path": "scripts/youtube.js"
     },
     {
+      "_comment": "H5P HTML5 video player wrapper",
       "path": "scripts/html5.js"
     },
     {
       "path": "scripts/flash.js"
     },
     {
+      "_comment": "Main H5P video player chooser (VideoJS || YouTube || HTML5 video",
       "path": "scripts/video.js"
     }
   ],
   "preloadedCss": [
+    {
+      "path": "styles/videojs.5.19.css"
+    },
     {
       "path": "styles/video.css"
     }
